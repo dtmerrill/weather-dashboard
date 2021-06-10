@@ -1,28 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather Dashboard</title>
-    <style href="./style.css" rel="stylesheet"></style>
-  </head>
-  <body>
-    <div class="container-fluid">
-      <div class="row">
-        <aside>
-          <h2>Search for City</h2>
-          <form action="" class="form">
-            <div class="form-inline">
-              <div class="input-group"><input type="text" /></div>
-            </div>
-            <div class="input-group-append">
-              <button>Search</button>
-            </div>
-          </form>
-        </aside>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dash</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+</head>
+<body>
+  <!-- Here is the header -->
+    <section class="hero is-primary">
+      <div class="hero-body">
+        <p class="title has-text-centered is-size-1 pb-3">
+          Weather Dashboard
+        </p>
+        <p class="subtitle has-text-centered">
+          See the forecast for the cities you want.
+        </p>
       </div>
+    </section>
+<!-- City input below (left side is instructions, right side is input box and button) -->
+<div class="columns is-desktop">
+  <div class="column"></div>
+<div class="column">
+      <!-- Instructions -->
+      <p class="pt-6 is-size-4 has-text-centered has-text-primary">
+          Enter a city name
+        </p>
+  </div>
+  <div class="column">
+      <!-- Input box and button -->
+      <div class="field pb-3 pt-6">
+          <input id="userInput" class="input is-primary is-medium" type="text" placeholder="Please type your city name..." 
+          >
+        </div>
+        <button id="weatherButton" class="button is-primary is-outlined has-text-black  is-rounded city-button"  >Get The Forecast</button>
+  </div>
+  <div class="column"></div>
+</div>
+<!-- Here is where the weather info will be displayed -->
+<div class="container" id="issues">
+  <p class="is-size-4 has-text-centered has-text-primary has-background-primary-light">  Here is the weather</p>
+</div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="content has-text-centered " >
+      <p>
+        <strong>Weather Dash</strong> by <a href="https://github.com/dtmerrill">Dana Merrill</a>.
+      </p>
     </div>
-  </body>
-  <script src="./script.js"></script>
+  </footer>
+</body>
+<script src="assets/script.js"></script>
 </html>
