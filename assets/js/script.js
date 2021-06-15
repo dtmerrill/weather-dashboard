@@ -70,7 +70,7 @@ function getWeather() {
        console.log(data)
         console.log("request for data code is " + data.weather[0].id + " and requested icon is " + data.weather[0].icon);
         var code = data.weather[0].id
-        matchIngredient(code)
+ //       matchIngredient(code)
   
         clouds.textContent = data.weather[0].description;
         temp.textContent = "a temperature of " + data.main.temp + " degrees farenheit";
@@ -80,4 +80,4 @@ function getWeather() {
         issueContainer.append(wind);
         myWeather = data.weather[0].description
     });
-        
+  }
