@@ -21,13 +21,15 @@
       </div>
     </section>
     <!-- City input below (left side is instructions, right side is input box and button) -->
-    <div class="columns is-desktop">
+    <div class="columns is-desktop has-background-primary-light">
       <div class="column"></div>
-      <div class="column">
-        <!-- Instructions -->
-        <p class="pt-6 is-size-4 has-text-centered has-text-primary">
-          enter a city name
-        </p>
+      <div class="column pt-6 is-size-4 has-text-centered has-text-primary">
+        previous searches
+      </div>
+      <div class="button is-primary" id="previousCitySearches"></div>
+
+      <div class="column pt-6 is-size-4 has-text-centered has-text-primary">
+        enter a city name
       </div>
       <div class="column">
         <!-- Input box and button -->
@@ -44,9 +46,10 @@
           class="
             button
             is-primary is-outlined
-            has-text-black
+            has-text-primary
             is-rounded
             city-button
+            has-background-primary-light
           "
         >
           get the forecast
@@ -55,7 +58,7 @@
       <div class="column"></div>
     </div>
     <!-- Here is where the weather info will be displayed -->
-    <div class="container" id="issues">
+    <div class="container" id="currentWeather">
       <h3
         class="
           is-size-4
@@ -63,7 +66,15 @@
         "
       >
         here is the current weather
-    </h3>
+      </h3>
+    </div>
+    <br />
+    <div class="columns has-text-primary has-background-primary-light">
+      <div class="column" id="forecastD1">forecast day 1</div>
+      <div class="column" id="forecastD2">forecast day 2</div>
+      <div class="column" id="forecastD3">forecast day 3</div>
+      <div class="column" id="forecastD4">forecast day 4</div>
+      <div class="column" id="forecastD5">forecast day 5</div>
     </div>
 
     <!-- Footer -->

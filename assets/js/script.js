@@ -12,7 +12,7 @@
 //  function: handle search history click
 
 
-var issueContainer = document.getElementById('issues');
+var currentWeatherContainer = document.getElementById('currentWeather');
 var clouds = document.createElement('h3');
 var temp = document.createElement('h3');
 var wind = document.createElement('h3');
@@ -106,10 +106,10 @@ function getWeather() {
         temp.textContent = "the temperature is " + data.main.temp + " degrees farenheit (and it feels like " + data.main.feels_like + " degrees)";
         wind.textContent = "with an average wind speed of " + data.wind.speed + " mph";
     //    ultraviolet.textContent = "with a UV index of " + current.uvi
-        issueContainer.append(clouds);
-        issueContainer.append(temp);
-        issueContainer.append(wind);
-        issueContainer.append(ultraviolet);
+        currentWeatherContainer.append(clouds);
+        currentWeatherContainer.append(temp);
+        currentWeatherContainer.append(wind);
+        currentWeatherContainer.append(ultraviolet);
         myWeather = data.weather[0].description
     });
   }
