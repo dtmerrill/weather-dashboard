@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+.mt-2 {
+  font-family: "Permanent Marker", cursive;
+}
+.header-style {
+  font-size: 50px;
+  color: darkblue;
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+  width: 100%;
+  padding: 10px 20px 10px 20px;
+  background-color: rgb(86, 118, 224);
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.card {
+  width: 100%;
+}
+.fiveDay {
+  background-color: rgb(63, 102, 218);
+  margin: 15px;
+}
+p {
+  font-family: "Permanent Marker", cursive;
+}
+h3 {
+  float: left;
+}
+
+h4 {
+  font-family: "Permanent Marker", cursive;
+}
+
+.input-group {
+  font-family: "Permanent Marker", cursive;
+}
+
+.list-group {
+  font-family: "Permanent Marker", cursive;
+  cursor: pointer;
+}
+.card-body {
+  font-family: "Permanent Marker", cursive;
+  cursor: default;
+}
