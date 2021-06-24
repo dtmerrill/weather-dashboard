@@ -1,90 +1,65 @@
-# 06 Server-Side APIs: Weather Dashboard
+# Quick-check Weather on the Run = weather dash (we don't have time for caps)
 
-## Your Task
 
-Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
+# Why, What and How is it?
 
-Use the [OpenWeather API](https://openweathermap.org/api) to retrieve weather data for cities. The documentation includes a section called "How to start" that provides basic setup and usage instructions. You will use `localStorage` to store any persistent data.
 
-## User Story
+## Why?
+As we have discussed in the past (see my other repos' ReadMe docs), life moves fast. We don't have time to wade through the barrage of information out there. We want things simple, easy and in as few clicks as possible.
 
-```
-AS A traveler
-I WANT to see the weather outlook for multiple cities
-SO THAT I can plan a trip accordingly
-```
+Welcome to weather dash - so you know what's happening with the weather where you want to know it - Quickly.
 
-## Acceptance Criteria
 
-```
-GIVEN a weather dashboard with form inputs
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
-WHEN I view the UV index
-THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, and the humidity
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city
-```
+## What?
+This straightforward weather-retrieval app takes openweather api information and presents it to you in a streamlined and clean interface. Limited interaction lets you focus only on what's needed - your current (or, past-searched) city for a current perspective on life - including a UV index reading to help you prepare.
 
-## Mock-Up
 
-The following image shows the web application's appearance and functionality:
+## How?
+The little things matter. We show only your past 13 cities (we're not superstitious) so they all can fit on your laptop screen. We picked a font that makes caps/non-caps moot. We highlighted the UV Index data if it is too high (5 or more is too high and everywhere is too high so far this year). We grabbed the appropriate icons to speed your perception of the information. If the screen is too busy, you can make it neater by hitting the clear button to remove the saved cities.
 
-![The weather app includes a search option, a list of cities, and a five-day forecast and current weather conditions for Atlanta.](./Assets/06-server-side-apis-homework-demo.png)
 
-## Grading Requirements
+## What else do I need to know?
+Not a bunch. I originally was using Bulma for the .css framework but found it a bit more challenging than I wanted to lay out according to project requirements.
 
-This homework is graded based on the following criteria: 
+Here's the look and feel:
+![dashing through the weather](./assets/images/weather-dash.png)
 
-### Technical Acceptance Criteria: 40%
 
-* Satisfies all of the above acceptance criteria plus the following:
+## Installation
+Great news! Simply launch the page associated with the repo to view and use this code:
 
-    * Uses the OpenWeather API to retrieve weather data.
+Repo:  https://github.com/dtmerrill/weather-dashboard
 
-    * Uses `localStorage` to store persistent data.
+Deployed Page:  https://dtmerrill.github.io/weather-dashboard/
 
-### Deployment: 32%
 
-* Application deployed at live URL.
+## Usage
+Just (type your city's name) in the box in the upper left of the screen and hit the magnifying glass or select one of the saved cities to start your adventure.
 
-* Application loads with no errors.
 
-* Application GitHub URL submitted.
+## Credits
+As always, we never walk completely alone.
 
-* GitHub repository that contains application code.
 
-### Application Quality: 15%
+## License
+MIT License
 
-* Application user experience is intuitive and easy to navigate.
+Copyright (c) [2021] [Dana T Merrill]
 
-* Application user interface style is clean and polished.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-* Application resembles the mock-up functionality provided in the homework instructions.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a readme describing the project.
-
-- - -
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
