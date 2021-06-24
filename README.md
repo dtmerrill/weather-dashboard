@@ -1,7 +1,7 @@
-# Quick-check Weather on the Run = weather dash (we don't have time for caps)
+# quick-check weather on the run = weather dash (we don't have time for caps)
 
 
-# Why, What and How is it?
+# Why, What and How is it? (Okay - maybe SOME caps.)
 
 
 ## Why?
